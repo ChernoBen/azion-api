@@ -16,7 +16,7 @@
         node src/index.js assign_func_to terminal_sign_name <function_id> <app_id>
     ```
  
-## Create and rule and domain:
+## Create a rule and domain:
  - Run the command passing a domain_name, app_id and instance_id:
     ```javascript
         node src/index.js set_domain <domain_name> <app_id> <instance_id>     
