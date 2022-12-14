@@ -1,4 +1,4 @@
-const {AUTH_URI,AZION_USER} = require('./env')
+const {AUTH_URI,AZION_USER} = require('../env')
 
 const axios = require('axios')
 
@@ -12,7 +12,7 @@ class Auth{
     async getToken(){
         try{
             const token = (await axios.post(this.uri,{},{headers:this.headers})).data.token
-            console.log('TOKEN:',token)
+            return token.toString()
         }catch(error){
             throw error
         }
