@@ -103,7 +103,8 @@ class Manager{
         const domain = new edge_domain(name,token,app_id)
         const domain_id = (await domain.create()).results.id
         console.log(
-            `rule_id: ${rule_id} |
+            `
+             rule_id: ${rule_id} |
              rule_name: ${name}
              domain_id: ${domain_id}
              domain_name: ${name}
