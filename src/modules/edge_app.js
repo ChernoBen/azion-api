@@ -45,7 +45,6 @@ class EdgeApp {
 
     async update(app_id){
         this.endpoint.update = `${EDGE_APP_URI}/${app_id}`
-        console.log(this.endpoint.update)
         const body = {
             "edge_functions": true,
 

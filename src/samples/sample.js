@@ -12,7 +12,7 @@ async function handleRequest(request) {
 
         }
 
-        return new Response(`foo:${foo} | boo:${boo}`)
+        return new Response('foo:undefinedß | boo:undefined')
         
     }catch(err){
         return new Response(`${err.toString()}`,{status:200})
