@@ -1,14 +1,24 @@
-node src/index.js create function terminal ./src/samples/sample.js 
-function id: 7598 | function name: terminal
+## Create an Edge Function:
+ - Define a function in js file inside src/samples
+ - Run the command:
+    ```javascript
+        node src/index.js create function <function_name> <function_file_path> 
+    ```
+## Create an Edge App:
+ - Run the command passing an app name:
+    ```javascript
+        node src/index.js create app <app_name>
+    ``` 
 
-node src/index.js create app terminal-app  
-app_id: 1671021435 | app_name: terminal-app
+## Create an instance between Edge App and Edge Function existing:
+ - Run the command passing a function id and an app_id:
+    ```javascript
+        node src/index.js assign_func_to terminal_sign_name <function_id> <app_id>
+    ```
+ 
+## Create and rule and domain:
+ - Run the command passing a domain_name, app_id and instance_id:
+    ```javascript
+        node src/index.js set_domain <domain_name> <app_id> <instance_id>     
+    ```
 
-node src/index.js assign_func_to terminal_sign_name 7598 1671021435 
-instance_id: 8652 | Instance_name: terminal_sign_name
-
-node src/index.js set_domain terminal 1671021435 8652 
-rule_id: 151654 |
-rule_name: terminal
-domain_id: 1671023416
-domain_name: terminal
